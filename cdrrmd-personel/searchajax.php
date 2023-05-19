@@ -22,8 +22,9 @@
    {
     
      echo "<table>";
-    echo "<tr>";
-        echo "<tr><td><h5>".$count."</h5></td>
+    //echo "<tr>";
+        echo "<tr>
+        <td><h5>".$count."</h5></td>
         <td><h5>".$row["first_name"]."</h5></td>
         <td><h5>".$row["middle_name"]."</h5></td>
         <td><h5>".$row["last_name"]."</h5></td>
@@ -31,11 +32,11 @@
         <td><h5>".$row["position"]."</h5></td>
         <td><h5>".$row["date_created"]."</h5></td>
         <td>"
-
-       ."<a href='edit.php?id=".$row['id']."'> <i class='fa-solid fa-pen-to-square fs-5 me-3 link-dark'></i></a>
-        <a href='delete.php?id=".$row['id']."'> <i class='fa-solid fa-trash fs-5 link-dark'></i></a>
-       <a ".$row["full_name"]." class = 'hidden:true'></a>
-       </td></tr>";
+        ."<a href='edit.php?id=".$row['id']."'> <i class='fa-solid fa-pen-to-square fs-5 me-3 link-dark'></i></a>
+          <a href='delete.php?id=".$row['id']."'> <i class='fa-solid fa-trash fs-5 link-dark me-3'></i></a>
+          <a ".$row["full_name"]." class = 'hidden:true'></a>
+       </td>
+       </tr>";
        
      echo "</table>";
      
