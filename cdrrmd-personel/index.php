@@ -45,6 +45,7 @@ include "db_conn.php";
 
   <div class="container">
     <?php
+   header('Content-Type: text/html; charset=UTF-8');
     if (isset($_GET["msg"])) {
       $msg = $_GET["msg"];
       echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -71,21 +72,21 @@ include "db_conn.php";
     <table class="table table-hover text-center table-striped">
       <thead class="table-dark">
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First Name</th>
-          <th scope="col">Middle Name</th>
-          <th scope="col">Last Name</th>
-          <th scope="col">Division</th>
-          <th scope="col">Position</th>
-          <th scope="col">Date Created</th>
-          <th scope="col">Action</th>
+          <th scope="col"><h5>#</h5></th>
+          <th scope="col"><h5>First Name</h5></th>
+          <th scope="col"><h5>Middle Name</h5></th>
+          <th scope="col"><h5>Last Name</h5></th>
+          <th scope="col"><h5>Division</h5></th>
+          <th scope="col"><h5>Position</h5></th>
+          <th scope="col"><h5>Date Created</h5></th>
+          <th scope="col"><h5>Action</h5></th>
           
         </tr>
       </thead>
       <tbody id="showdata">
         <?php
        require_once "db_conn.php";
-
+       header('Content-Type: text/html; charset=UTF-8');
       if(isset($_GET['page_no']) && $_GET['page_no']!=""){
         $page_no = $_GET['page_no'];
       }else{

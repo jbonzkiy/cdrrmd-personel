@@ -51,8 +51,8 @@ if (isset($_POST["submit"])) {
 
 <body>
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="assets/img/oro_rescue_logo_100px.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  <a class="navbar-brand " href="#">
+    <img src="assets/img/oro_rescue_logo_100px.png" width="30" height="30" class="d-inline-block align-top " alt="">
     CDRRMD PERSONEL 
   </a>
   
@@ -114,7 +114,7 @@ if (isset($_POST["submit"])) {
 
             <br><div>
                <button type="submit" class="btn btn-success" name="submit" onclick="return confirm('Are you sure you want to save?')">Save</button>
-               <a href="add-new.php" class="btn btn-danger" onclick="return confirm('Are you sure you want to cancel?')">Cancel</a>
+               <a href="index.php" class="btn btn-danger" onclick="return confirm('Are you sure you want to cancel?')">Cancel</a>
             </div></br>
          </form>
       </div>

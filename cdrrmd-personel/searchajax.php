@@ -1,7 +1,7 @@
 
 <?php 
   include("db_conn.php");
- 
+  header('Content-Type: text/html; charset=UTF-8');
    $name = $_POST['name'];
 
   
@@ -33,7 +33,7 @@
         <td><h5>".$row["date_created"]."</h5></td>
         <td>"
         ."<a href='edit.php?id=".$row['id']."'> <i class='fa-solid fa-pen-to-square fs-5 me-3 link-dark'></i></a>
-          <a href='delete.php?id=".$row['id']."'> <i class='fa-solid fa-trash fs-5 link-dark me-3'></i></a>
+          <a href='delete.php?id=".$row['id']."'> <i class='fa-solid fa-trash fs-5 me-3 link-dark'></i></a>
           <a ".$row["full_name"]." class = 'hidden:true'></a>
        </td>
        </tr>";
