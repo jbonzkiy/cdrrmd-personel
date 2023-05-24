@@ -225,6 +225,25 @@ include "db_conn.php";
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         </div>
 
+
+        <?php
+$ipAddress = '192.168.0.147'; // Replace with the desired IP address
+
+// Using the IP address as hostname in PHP cURL
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "http://$ipAddress/cdrrmd-personel");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+
+// Output the response
+echo $response;
+?>
+
+
+
+
+
         <script>
   $(document).ready(function(){
    $('#getName').on("keyup", function(){
